@@ -11,15 +11,15 @@ document.body.appendChild(c);
 
 let perm = [];
 
-while (perm.length < 255) {
-  while (perm.includes(val = Math.floor(Math.random() * 255)));
+while (perm.length < 300) {
+  while (perm.includes(val = Math.floor(Math.random() * 300)));
   perm.push(val);
 }
 
 let lerp = (a, b, t) => a + (b - a) * (1 - Math.cos(t * Math.PI)) / 2;
 
 let noise = x => {
-  x = x * 0.01 % 255;
+  x = x * 0.01 % 300;
   return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 }
 
@@ -86,7 +86,7 @@ let k = {ArrowUp: 0, ArrowDown: 0, ArrowLeft: 0, ArrowRight: 0};
 
 const loop = () => {
   speed -= (speed - (k.ArrowUp - k.ArrowDown)) * 0.1;
-  t += 10 * speed;
+  t += 13 * speed;
   ctx.fillStyle = "#19f";
   ctx.fillRect(0, 0, c.width, c.height);
 
