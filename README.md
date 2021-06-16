@@ -1,3 +1,13 @@
+# アプリケーション概要
+横スクロールバイクゲームです。  
+## 操作方法
+矢印キー上：前進  
+矢印キー下：後退  
+矢印キー右：前回転  
+矢印キー左：左回転  
+クラッシュしたら画面からフェードアウトします。リスタートはブラウザをリロードしてください。  
+https://samanosuke-akechi.github.io/motorcycle-game-34566/build/index.html
+
 # <p align="center"><a href='https://github.com/Dugnist/html5-boilerplate'><img width="200" src="http://css-live.ru/wp-content/uploads/2017/06/web1.png" alt="html5-boilerplate" /></a><br/> html5-boilerplate </p>
 
 ### Get started
